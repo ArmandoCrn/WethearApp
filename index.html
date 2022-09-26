@@ -22,7 +22,45 @@
       href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
       rel="stylesheet"
     />
+
+    <!-- icon - FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/faff2b4ada.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
-  <body></body>
+  <body>
+    <header>
+      <i class="fa-regular fa-sun"></i>
+      <h1>Weather App</h1>
+    </header>
+
+    <main>
+      <div id="form-group">
+        <input type="search" />
+        <button class="search-btn">Search</button>
+
+        <button>
+          <span class="is-active">°C</span>
+          /
+          <span>°F</span>
+        </button>
+      </div>
+
+      <!--
+        Non so se creare la card statica e cambiarla dinamicamente
+        oppure creare tutto dinamicamente...
+      -->
+      <div id="card">
+        <h2 class="city">London</h2>
+        <img class="" src="./img/03d.png" alt="" />
+        <p class="description">Cloud</p>
+        <p class="deg">12 °C</p>
+        <p class="feels-like">Feels Like: 10 °C</p>
+        <p class="humidity">Humidity: 61%</p>
+        <p class="wind">Wind: 4 km/h</p>
+      </div>
+    </main>
+  </body>
 </html>
