@@ -1,0 +1,7 @@
+:root {
+  --font: "Bree Serif", serif;
+}
+
+html {
+  font-family: var(--font);
+}
