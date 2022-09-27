@@ -2,6 +2,7 @@
   --font: "Bree Serif", serif;
   --color-1: #d6f7fe;
   --color-2: #ffcb04;
+  --color-2-hover: #ffd32d;
   --color-3: #0e62fe;
   --color-4: #a5d8e8;
   --color-5: #20d160;
@@ -27,6 +28,15 @@ a {
   text-decoration: none;
 }
 
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
 /*============
   TYPOGRAPHY
 ============*/
@@ -34,13 +44,12 @@ a {
 body {
   font-family: var(--font);
   background-color: var(--color-4);
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 1rem;
 }
 
 /*|-- Header --|*/
-button,
-input {
-  font-family: inherit;
-}
 
 .fa-sun,
 .fa-moon {
@@ -145,6 +154,14 @@ input {
   background-color: #fff;
   border-radius: 5px;
   width: 280px;
+}
+
+.search-btn:hover {
+  background-color: var(--color-2-hover);
+}
+
+.switch-deg:hover {
+  background-color: #eee;
 }
 
 /*|-- Main -> Card --|*/
