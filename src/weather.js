@@ -11,7 +11,6 @@ export default async function getMeteo() {
 
   const ourMeteo = {
     name: data.name,
-    desc: data.weather[0].main,
     alt: data.weather[0].description,
     icon: data.weather[0].icon,
     temp: Math.round(data.main.temp),
